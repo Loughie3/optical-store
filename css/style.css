@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+html {
+  font-size: 16px;
+}
+
+header {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  background-image: url("../images/glasses.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+ h1 {
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+  font-size: 4rem;
+  color: #ffffff;
+  background-color: #2d3142;
+  padding: 0.5rem;
+  margin-top: 20rem;
+  border-radius: 0.5rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2d3142;
+  z-index: 10;
+}
+
+nav li {
+  list-style-type: none;
+}
+nav ul {
+  display: flex;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+}
+
+h2 {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4{
+  font-size: 1.7rem;
+}
+
+.content {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+article {
+  flex: 1;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.3rem;
+}
+
+aside {
+  flex: 1;
+  padding: 1.25rem;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+}
+
+#about {
+  background-color: #4f5d75;
+}
+#about h3 {
+  text-align: center;
+  padding-bottom: 1em;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#about p {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+#services {
+  background-image: url("../images/blured-image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#overlay {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 100vh;
+  height: 100%;
+}
+
+#services-list{
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 1.3rem;
+
+}
+
+#services li {
+  padding-bottom: 2.5rem;
+}
+#left-list {
+  flex: 1;
+}
+#right-list {
+  flex: 1;
+}
+#contact {
+  background-color: #ef8354;
+}
+
+.address-heading{ 
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+address {
+  flex: 1;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+
+address ul {
+  text-align: left;
+  display: inline-block;
+  padding-left: 0;
+  margin-top: 0;
+}
+address p {
+  margin-bottom: 3.125rem;
+}
+#contact h3 {
+  margin-bottom: 1rem;
+}
+
+#contact li {
+  margin-bottom: 0.625rem;
+  margin-top: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: #2d3142;
+  height: 15vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  padding: 2rem;
+ 
+ 
+}
+
+@media screen and (max-width: 1200px) {
+  header h1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  #about h3 {
+    font-size: 1.7rem;
+    padding: 2rem;
+    text-align: left;
+  }
+ 
+  #services-list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  #overlay {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1700px) {
+  #services li {
+    padding-bottom: 1.5rem;
+  }
+  section h1 {
+    padding-bottom: 0.5rem;
+  }
+  #about h3{
+    margin-bottom: 0;
+  }
+  #about h2 {
+    padding-bottom: 0.5rem;;
+  }
+}
+
